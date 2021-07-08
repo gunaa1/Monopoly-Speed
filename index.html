@@ -1,0 +1,148 @@
+<!-- @author Guna Avula -->
+
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+        <title>Monopoly Speed</title>
+        <link rel="shortcut icon" href="./images/icon.png">
+
+         <!-- meta data -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Website created to compliment Monopoly by handling complex aspects of the game."/>
+
+        <!-- regular css + js-->
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/logic.js"></script>
+
+        <!-- imported styling + js -->
+        <link href="./css/imported/style.css" rel="stylesheet" type="text/css">
+        <link href="./css/imported/index2.css" rel="stylesheet" type="text/css">
+        <link href="./css/imported/responsive.css" rel="stylesheet" type="text/css">
+        <link href="./css/imported/magnific-popup.css" rel="stylesheet" type="text/css">
+        <link href="./css/imported/animate.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="stylesheet" href="../css/imported/font-awesome.css">
+    </head>
+
+    <body>
+        <!-- page loading -->
+        <p id = "pageLoading">Page Loading...</p>
+
+        <!-- actual content -->
+        <div id = "content">
+            <!-- progress bar -->
+            <div id="myProgress">
+                <div id="myBar"></div>
+            </div>
+
+            <!-- header -->
+            <header class="header" id="header">
+                <div class="container">
+                    <figure class="logo animated fadeInDown delay-07s">
+                        <img src="./images/monopolySpeed.webp" alt="Monopoly Speed Logo" id = "monopolySpeedLogo">
+                    </figure>
+                    </br></br></br></br></br></br></br></br></br></br></br>
+                    <ul class="we-create animated fadeInUp delay-1s">
+                        <a id = "downBtn" href= "#nav"><div class="scroll-down"></div></a>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- nav bar -->
+            <nav class="main-nav-outer" id="nav">
+                <div class="container">
+                <ul class="main-nav">
+                    <li><a onclick = "changeScreen('1')">Home</a></li>
+                    <li><a onclick = "changeScreen('2')">Play Game</a></li>
+                    <li><a onclick = "changeScreen('3')">Questions?</a></li>
+                </ul>
+                <a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+                </div>
+            </nav>
+
+            <!-- actual content -->
+            <div class="container">
+                <!-- home content -->
+                <div id = "home">
+                    <div class = "content1">
+                        <h2 style = "color: #DB3A34; font-family: 'Courier New', Courier, monospace; padding: 2vh">Purpose</h2>
+                        <div class = "content1Left">
+                            <h3>Sustainability Aspect</h3>
+                            <h3>Simplicity Aspect</h3>
+                        </div>
+                        <div class = "content1Right">
+                            <img src = "./images/monopolyMoney.jpg"/>
+                        </div>
+                    </div>
+                    <div class = "content2">
+                        <h2 style = "color: #DB3A34; font-family: 'Courier New', Courier, monospace; padding: 1vh" >Rules</h2>
+                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <div class="collapsibleContent">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- play game content -->
+                <div class = "content" id = "playGame">
+                    <p>play game</p>
+                </div>
+
+                <!-- questions -->
+                <div class = "content" id = "questions">
+                    </br>
+                    <h1>Contact</h1>
+                    <form action="" method="post" role="form" class="">
+                        <div class = "row">
+                            <div class = "side1">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="textBox" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="textBox" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="textBox" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" />
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class = "side2">
+                                <div class="form-group">
+                                    <textarea class="textArea" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <button onClick = "alertCon()" type="submit" class="input-btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- up button -->
+            <a href="#" id = 'upbtn'><i class= "far fa-arrow-alt-circle-up fa-3x" color="#177E89"></i></a>
+        </div>
+    </body>
+
+    <!-- collapsible logic-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
+</html>

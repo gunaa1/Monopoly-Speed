@@ -1,0 +1,223 @@
+html{
+	scroll-behavior:smooth;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: .8vh;
+    z-index: 2;
+  }
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 50vh #323031;
+    background-color:#323031;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#DB3A34, #FFC857);
+    border-radius: .4vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(#FFC857, #DB3A34);
+}
+
+/* page loader */
+#content {
+    display: none;
+}
+
+#pageLoading {
+    display: block;
+    position: absolute;
+    top: 45%; left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 4vh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #323031;
+    color: #DB3A34;
+    animation-name: fillingLoad;
+    animation-duration: 2s;
+}
+
+@keyframes fillingLoad {
+    from {
+        width: 20%;
+        height: 6%;
+    }
+    to {
+        width: 100%;
+        height: 50%;
+        padding-top: 25%;
+    }
+}
+
+/* Progress Bar */
+#myProgress {
+    position: fixed;
+    top:0%; left:0%;
+    width: 100%;
+    background-color: #323031;
+    display: none;
+    z-index: 1;
+  }
+  
+#myBar {
+    width: 0%;
+    height: .7vh;
+    background-color: #177E89;
+    display: none;
+    z-index: 1;
+}
+
+/* Up Button */
+#upbtn {
+	position: fixed;
+	bottom: 4vh;
+	right: 8vh;
+	border-radius: 10vh;
+	background: transparent;
+	height: 6vh;
+	width: 6vh;
+	text-align: center;
+	vertical-align: center;
+	z-index: 1;
+	display: none;
+}
+
+#upbtn:visited {
+    color: #177E89;
+}
+
+/* showing correct content */
+#home {
+    display: block;
+}
+
+#playGame {
+    display: none;
+}
+
+#questions {
+    display: none;
+}
+
+/* Cursor Clickability on links */
+a {
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    margin-top: 5vh;
+    margin-bottom: 11vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    border-radius: 6vh;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50vh;
+    background-color: #f1efef;
+}
+
+.content1 {
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 75vh;
+    height: auto;
+    background-color: #f1efef;
+}
+
+.content1Left {
+    float:left;
+    border-color: #DB3A34;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-right-style: solid;
+    width: 49%;
+}
+
+.content1Right {
+    float:right;
+    width: 49%;
+}
+
+.content2 {
+    margin-top: 2vh;
+    margin-left: 10%;
+    max-width: 80%;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50vh;
+    background-color: white;
+}
+
+/* contact page */
+.textBox {
+    margin-top: 2.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 80%;
+}
+
+.textArea {
+    border-radius: 1vh;
+    margin-top: 2vh;
+    width: 90%;
+    height: 15.5vh;
+}
+
+.side1 {
+    float: left;
+    width: 49%;
+    border-right: black;
+    border-right-style: solid;
+}
+
+.side2 {
+    float: right;
+    width: 49%;
+}
+
+/* collapsibles */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsibleContent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
