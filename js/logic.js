@@ -3,6 +3,9 @@ window.onload = function() {
     setTimeout(pageLoading, 2000);
 };
 
+//window close logic
+
+
 //loading bar
 function pageLoading() {
     document.getElementById("pageLoading").style.display = "none";

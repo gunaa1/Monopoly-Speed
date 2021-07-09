@@ -2,6 +2,21 @@ html{
 	scroll-behavior:smooth;
 }
 
+ol {
+    text-align: left;
+}
+
+li {
+    font-size: large;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+}
+
+h3 {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
     width: .8vh;
@@ -77,7 +92,7 @@ html{
 #upbtn {
 	position: fixed;
 	bottom: 4vh;
-	right: 8vh;
+	right: 3vh;
 	border-radius: 10vh;
 	background: transparent;
 	height: 6vh;
@@ -89,7 +104,7 @@ html{
 }
 
 #upbtn:visited {
-    color: #177E89;
+    color: #323031;
 }
 
 /* showing correct content */
@@ -149,8 +164,8 @@ a {
 
 .content2 {
     margin-top: 2vh;
-    margin-left: 10%;
-    max-width: 80%;
+    margin-left: 5%;
+    max-width: 90%;
     text-align: center;
     vertical-align: middle;
     min-height: 50vh;
@@ -221,3 +236,65 @@ a {
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
+
+.sustainability {
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-bottom: 4vh;
+    font-size: 20px;
+}
+
+/* playing monopoly page */
+.player1 {
+    float:left;
+    width:40%;
+    background-color: #323031;
+    border-radius: 6vh;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50vh;
+    background-color: #f1efef;
+    margin-left:5%;
+    margin-top:5%;
+}
+
+.player2 {
+    float:right;
+    width:40%;
+    background-color: #323031;
+    border-radius: 6vh;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50vh;
+    background-color: #f1efef;
+    margin-right:5%;
+    margin-top:5%;
+}
+
+.player3 {
+    float:left;
+    width:40%;
+    background-color: #323031;
+    border-radius: 6vh;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50vh;
+    background-color: #f1efef;
+    margin-left:5%;
+    margin-top:5%;
+    margin-bottom: 7%;
+}
+
+.player4 {
+    float:right;
+    width:40%;
+    background-color: #323031;
+    border-radius: 6vh;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50vh;
+    background-color: #f1efef;
+    margin-right:5%;
+    margin-top:5%;
+    margin-bottom: 7%;
+}
