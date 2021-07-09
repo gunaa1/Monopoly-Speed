@@ -2,7 +2,7 @@
 
 ** To view the website **
 
-To sucessfully view this website, please visit: https://gunaa1.github.io/Monopoly-Tracker/
+To sucessfully view this website, please visit: https://gunaa1.github.io/Monopoly-Speed/
 
     In case the website is down, take the following steps:
         1) Navigate to the main page of the repository.
