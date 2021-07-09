@@ -4,12 +4,12 @@
 
 To sucessfully view this website, please visit: https://gunaa1.github.io/Monopoly-Tracker/
 
-In case the website is down, take the following steps:
-    1) Navigate to the main page of the repository.
-    2) Click on the green colored "Code" button.
-    3) Then click the "Download ZIP" button.
-    4) After it completes downloading, open the ZIP file.
-    5) Finally, click on the "index.html" file to open the website.
+    In case the website is down, take the following steps:
+        1) Navigate to the main page of the repository.
+        2) Click on the green colored "Code" button.
+        3) Then click the "Download ZIP" button.
+        4) After it completes downloading, open the ZIP file.
+        5) Finally, click on the "index.html" file to open the website.
         
 ** More techinical details **
 
