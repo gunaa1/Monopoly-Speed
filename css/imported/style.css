@@ -93,9 +93,11 @@ p{
 ---------------------------------*/
 .header{
 	text-align:center;
-	background:#084C61;
-	padding-top: 15%;
-	padding-bottom: 3%;
+	background-color:#084C61;
+	background-image:url("../../images/monopolyBoard.png");
+	padding-top: 22%;
+	background-size: 100%;
+	padding-bottom: 4%;
 }
 .logo{
 	width:20%;
@@ -202,7 +204,7 @@ color: #fff;
 
 .main-nav li a:hover{ 
 	text-decoration:none;
-	color: #7cc576;
+	color: #FFC857;
 }
 
 .small-logo{ 
@@ -715,11 +717,11 @@ border: 2px solid #fff;
 	overflow:auto;
 }
 .input-btn{
-	width: 20vh;
-	height:3vh;
+	width: 92.5%;
+	height:6vh;
 	text-align: center;
     margin: 2.5vh;
-	background:#7cc576;
+	background:#FFC857;
 	border-radius:4px;
 	color:#ffffff;
 	font-size:14px;
@@ -733,7 +735,7 @@ border: 2px solid #fff;
 }
 
 .input-btn:hover{
-	background: #111;
+	background: #323031;
 	color: #fff;
 }
 

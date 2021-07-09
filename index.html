@@ -45,7 +45,7 @@
                     <figure class="logo animated fadeInDown delay-07s">
                         <img src="./images/monopolySpeed.webp" alt="Monopoly Speed Logo" id = "monopolySpeedLogo">
                     </figure>
-                    </br></br></br></br></br></br></br></br></br></br></br>
+                    </br></br></br></br>
                     <ul class="we-create animated fadeInUp delay-1s">
                         <a id = "downBtn" href= "#nav"><div class="scroll-down"></div></a>
                     </ul>
@@ -147,22 +147,26 @@
                         <h3 id = "player1Debt">Player Debt: $0</h3>
                         <h3 id = "player1Properties">Num of Properties: 0</h3>
 
-                        <h4>Take a Loan</h4>
-                        <input id = "player1LoanValue" type = "text" placeHolder = "Loan Value"></input>
-                        <button onclick="getLoan(1)">Take the Loan</button>
-
                         <h4>Pay Another Player</h4>
                         <input id = "player1PayValue" type = "text" placeholder="Money Value"></input>
-                        <button onclick="payOtherPlayer(1, 2)">Player 2</button>
-                        <button onclick="payOtherPlayer(1, 3)">Player 3</button>
-                        <button onclick="payOtherPlayer(1, 4)">Player 4</button>
+                    </br>
+                        <button onclick="payOtherPlayer(1, 2)" class = "playerBtn">Player 2</button>
+                        <button onclick="payOtherPlayer(1, 3)" class = "playerBtn">Player 3</button>
+                        <button onclick="payOtherPlayer(1, 4)" class = "playerBtn">Player 4</button>
 
                         <h4>Buy A Property</h4>
                         <input id = "player1PropertyValue" type = "text" placeholder = "Property Value"></input>
-                        <button onclick = "buyAProperty(1)">Buy!</button>
+                    </br>
+                        <button onclick = "buyAProperty(1)" class = "takeLoan">Buy!</button>
 
-                        <button onclick = "completedRound(1)">Completed a Round</button>
-                        <button onclick = "getOutOfJail(1)">Pay to Get out of Jail</button>
+                        <h4>Take a Loan</h4>
+                        <input id = "player1LoanValue" type = "text" placeHolder = "Loan Value"></input>
+                    </br>
+                        <button onclick="getLoan(1)" class = "takeLoan">Take the Loan</button>
+                    </br>
+
+                        <button onclick = "completedRound(1)" class = "btns1">Completed a Round</button>
+                        <button onclick = "getOutOfJail(1)" class = "btns2">Pay to Get out of Jail</button>
                     </div>
                     
                     <div class = "player2">
@@ -171,22 +175,26 @@
                         <h3 id = "player2Debt">Player Debt: $0</h3>
                         <h3 id = "player2Properties">Num of Properties: 0</h3>
 
-                        <h4>Take a Loan</h4>
-                        <input id = "player2LoanValue" type = "text" placeHolder = "Loan Value"></input>
-                        <button onclick="getLoan(2)">Take the Loan</button>
-
                         <h4>Pay Another Player</h4>
                         <input id = "player2PayValue" type = "text" placeholder="Money Value"></input>
-                        <button onclick="payOtherPlayer(2, 1)">Player 1</button>
-                        <button onclick="payOtherPlayer(2, 3)">Player 3</button>
-                        <button onclick="payOtherPlayer(2, 4)">Player 4</button>
+                    </br>
+                        <button onclick="payOtherPlayer(2, 1)" class = "playerBtn">Player 1</button>
+                        <button onclick="payOtherPlayer(2, 3)" class = "playerBtn">Player 3</button>
+                        <button onclick="payOtherPlayer(2, 4)" class = "playerBtn">Player 4</button>
 
                         <h4>Buy A Property</h4>
                         <input id = "player2PropertyValue" type = "text" placeholder = "Property Value"></input>
-                        <button onclick = "buyAProperty(2)">Buy!</button>
+                    </br>
+                        <button onclick = "buyAProperty(2)" class = "takeLoan">Buy!</button>
 
-                        <button onclick = "completedRound(2)">Completed a Round</button>
-                        <button onclick = "getOutOfJail(2)">Pay to Get out of Jail</button>
+                        <h4>Take a Loan</h4>
+                        <input id = "player2LoanValue" type = "text" placeHolder = "Loan Value"></input>
+                    </br>
+                        <button onclick="getLoan(2)" class = "takeLoan">Take the Loan</button>
+                    </br>
+
+                        <button onclick = "completedRound(2)" class = "btns1">Completed a Round</button>
+                        <button onclick = "getOutOfJail(2)" class = "btns2">Pay to Get out of Jail</button>
                     </div>
 
                     <div class = "player3">
@@ -195,22 +203,26 @@
                         <h3 id = "player3Debt">Player Debt: $0</h3>
                         <h3 id = "player3Properties">Num of Properties: 0</h3>
 
-                        <h4>Take a Loan</h4>
-                        <input id = "player3LoanValue" type = "text" placeHolder = "Loan Value"></input>
-                        <button onclick="getLoan(3)">Take the Loan</button>
-
                         <h4>Pay Another Player</h4>
                         <input id = "player3PayValue" type = "text" placeholder="Money Value"></input>
-                        <button onclick="payOtherPlayer(3, 1)">Player 1</button>
-                        <button onclick="payOtherPlayer(3, 2)">Player 2</button>
-                        <button onclick="payOtherPlayer(3, 4)">Player 4</button>
+                    </br>
+                        <button onclick="payOtherPlayer(3, 1)" class = "playerBtn">Player 1</button>
+                        <button onclick="payOtherPlayer(3, 2)" class = "playerBtn">Player 2</button>
+                        <button onclick="payOtherPlayer(3, 4)" class = "playerBtn">Player 4</button>
 
                         <h4>Buy A Property</h4>
                         <input id = "player3PropertyValue" type = "text" placeholder = "Property Value"></input>
-                        <button onclick = "buyAProperty(3)">Buy!</button>
+                    </br>
+                        <button onclick = "buyAProperty(3)" class = "takeLoan">Buy!</button>
 
-                        <button onclick = "completedRound(3)">Completed a Round</button>
-                        <button onclick = "getOutOfJail(3)">Pay to Get out of Jail</button>
+                        <h4>Take a Loan</h4>
+                        <input id = "player3LoanValue" type = "text" placeHolder = "Loan Value"></input>
+                    </br>
+                        <button onclick="getLoan(3)" class = "takeLoan">Take the Loan</button>
+                    </br>
+
+                        <button onclick = "completedRound(3)" class = "btns1">Completed a Round</button>
+                        <button onclick = "getOutOfJail(3)" class = "btns2">Pay to Get out of Jail</button>
                     </div>
 
                     <div class = "player4">
@@ -219,22 +231,26 @@
                         <h3 id = "player4Debt">Player Debt: $0</h3>
                         <h3 id = "player4Properties">Num of Properties: 0</h3>
 
-                        <h4>Take a Loan</h4>
-                        <input id = "player4LoanValue" type = "text" placeHolder = "Loan Value"></input>
-                        <button onclick="getLoan(4)">Take the Loan</button>
-
                         <h4>Pay Another Player</h4>
                         <input id = "player4PayValue" type = "text" placeholder="Money Value"></input>
-                        <button onclick="payOtherPlayer(4, 1)">Player 1</button>
-                        <button onclick="payOtherPlayer(4, 2)">Player 2</button>
-                        <button onclick="payOtherPlayer(4, 3)">Player 3</button>
+                    </br>
+                        <button onclick="payOtherPlayer(4, 1)" class = "playerBtn">Player 1</button>
+                        <button onclick="payOtherPlayer(4, 2)" class = "playerBtn">Player 2</button>
+                        <button onclick="payOtherPlayer(4, 3)" class = "playerBtn">Player 3</button>
 
                         <h4>Buy A Property</h4>
                         <input id = "player4PropertyValue" type = "text" placeholder = "Property Value"></input>
-                        <button onclick = "buyAProperty(4)">Buy!</button>
+                    </br>
+                        <button onclick = "buyAProperty(4)" class = "takeLoan">Buy!</button>
 
-                        <button onclick = "completedRound(4)">Completed a Round</button>
-                        <button onclick = "getOutOfJail(4)">Pay to Get out of Jail</button>
+                        <h4>Take a Loan</h4>
+                        <input id = "player4LoanValue" type = "text" placeHolder = "Loan Value"></input>
+                    </br>
+                        <button onclick="getLoan(4)" class = "takeLoan">Take the Loan</button>
+                    </br>
+
+                        <button onclick = "completedRound(4)" class = "btns1">Completed a Round</button>
+                        <button onclick = "getOutOfJail(4)" class = "btns2">Pay to Get out of Jail</button>
                     </div>
                 </div>
 
@@ -263,10 +279,11 @@
                                     <textarea class="textArea" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                     <div class="validation"></div>
                                 </div>
-                                <button onClick = "alertCon()" type="submit" class="input-btn">Send Message</button>
                             </div>
                         </div>
+                        
                     </form>
+                    <button onClick = "alertCon()" type="submit" class="input-btn">Send Message</button>
                 </div>
             </div>
 

@@ -183,8 +183,8 @@ a {
 .textArea {
     border-radius: 1vh;
     margin-top: 2vh;
-    width: 90%;
-    height: 15.5vh;
+    width: 83.5%;
+    height: 25vh;
 }
 
 .side1 {
@@ -297,4 +297,43 @@ a {
     margin-right:5%;
     margin-top:5%;
     margin-bottom: 7%;
+}
+
+/* buttons */
+.takeLoan {
+    margin: 2vh;
+    padding: 1vh;
+    width: 20vh;
+    border-radius: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #85BB65;
+}
+
+.playerBtn {
+    margin: 2vh;
+    border-radius: 1vh;
+    width: 15vh;
+    padding: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#15707A;
+}
+
+.btns2 {
+    padding:2vh;
+    border-radius:2vh;
+    width:33vh;
+    margin:3vh;
+    margin-top:1vh;
+    background-color: #fdaa48;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btns1 {
+    padding:2vh;
+    border-radius:2vh;
+    width:33vh;
+    margin:3vh;
+    margin-top:1vh;
+    background-color:#15707A;
+    font-family: 'Courier New', Courier, monospace;
 }
