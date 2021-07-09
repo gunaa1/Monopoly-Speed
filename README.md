@@ -10,7 +10,10 @@ To sucessfully view this website, please visit: https://gunaa1.github.io/Monopol
         3) Then click the "Download ZIP" button.
         4) After it completes downloading, open the ZIP file.
         5) Finally, click on the "index.html" file to open the website.
-        
+
+** Detailed Overview **
+Check out this Youtube video: https://youtu.be/3cJIwuZy7jY
+
 ** More techinical details **
 
 Structure: "index.html" file contains all the content. The rest of the files are in 3 folders: css, js, and images. Each folder contains the respective file types. Additionally, the css folder contains another folder named imported, which contains css files that I imported from other pages. All of the css very specific to this website is in "index.css", while more genral styling is in imported files. All of the imported files are named accordingly as well.
