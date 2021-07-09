@@ -16,3 +16,5 @@ To sucessfully view this website, please visit: https://gunaa1.github.io/Monopol
 Structure: "index.html" file contains all the content. The rest of the files are in 3 folders: css, js, and images. Each folder contains the respective file types. Additionally, the css folder contains another folder named imported, which contains css files that I imported from other pages. All of the css very specific to this website is in "index.css", while more genral styling is in imported files. All of the imported files are named accordingly as well.
 
 Pages: The project is structed in a way so there is only a single page. Other "pages" are parts of the website showing up and disappearing. Furthermore, the same logic is         applied to the loading animations.
+
+Color Palette: https://coolors.co/15707a-084c61-db3a34-ffc857-323031
